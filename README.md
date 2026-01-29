@@ -435,9 +435,11 @@ ls .gz
  <img width="644" height="140" alt="Screenshot from 2026-01-29 14-28-46" src="https://github.com/user-attachments/assets/14ec6088-f822-4ba0-894b-851030369adb" />
 
 gunzip backup.tar.gz
+ls
 ## OUTPUT
 
- 
+ <img width="648" height="196" alt="Screenshot from 2026-01-29 18-44-47" src="https://github.com/user-attachments/assets/dcb39916-2663-4a54-9bd5-f752661b6ee0" />
+
 # Shell Script
 ```
 echo '#!/bin/sh' > my-script.sh
@@ -446,6 +448,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
+<img width="651" height="272" alt="Screenshot from 2026-01-29 18-48-07" src="https://github.com/user-attachments/assets/640415b1-adb4-4bf6-a654-610799e5e95e" />
 
  
 cat << stop > herecheck.txt
@@ -458,6 +461,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
+<img width="337" height="97" alt="Screenshot from 2026-01-29 18-38-08" src="https://github.com/user-attachments/assets/e439d2c3-ea29-4599-908d-763fcd976793" />
 
 
 cat < scriptest.sh 
@@ -496,23 +500,30 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
+<img width="430" height="331" alt="Screenshot from 2026-01-29 18-54-42" src="https://github.com/user-attachments/assets/57d6cb51-c30d-4626-a8ef-98b0cbf5ac77" />
 
  
 ls file1
 ## OUTPUT
+<img width="285" height="54" alt="Screenshot from 2026-01-29 18-56-23" src="https://github.com/user-attachments/assets/f64ba6c0-df8e-4ec3-b7b9-0501342188ef" />
 
 echo $?
 ## OUTPUT 
+
+<img width="285" height="54" alt="Screenshot from 2026-01-29 18-57-06" src="https://github.com/user-attachments/assets/58ae1268-9bd3-45b6-94f7-d25cf49d48e5" />
+
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- 
+ <img width="285" height="54" alt="Screenshot from 2026-01-29 18-58-06" src="https://github.com/user-attachments/assets/4ff56ffd-1be8-45e9-8428-2e0afbd0a785" />
+
 abcd
  
 echo $?
  ## OUTPUT
+<img width="469" height="221" alt="Screenshot from 2026-01-29 18-59-17" src="https://github.com/user-attachments/assets/12edac98-a0ce-4b68-801e-99d3d11b2f11" />
 
 
  
@@ -545,6 +556,7 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
+<img width="476" height="243" alt="Screenshot from 2026-01-29 19-02-19" src="https://github.com/user-attachments/assets/95c9250c-bec4-492e-937d-cd44ed2955f7" />
 
 
 
@@ -552,6 +564,7 @@ chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
+<img width="605" height="187" alt="Screenshot from 2026-01-29 19-03-22" src="https://github.com/user-attachments/assets/ae3c5fdf-a879-4a1d-8075-4d9b41bddebc" />
 
 
 # check file ownership
@@ -579,20 +592,20 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+<img width="631" height="256" alt="Screenshot from 2026-01-29 19-27-20" src="https://github.com/user-attachments/assets/91c15214-1000-4aac-961b-b54394181bf5" />
 
-# check if with file location
-cat>ifnested.sh 
-```bash
+check if with file location
+cat>ifnested.sh
 \#!/bin/bash
-if [ -e $HOME ]
+if[-e $HOME]
 then
-echo “$HOME The object exists, is it a file?”
-if [ -f $HOME ]
-then
-echo “Yes,$HOME it is a file!”
+echo"$HOME The object exits,is it a file?"
+if[-f $HOME]
+then 
+echo"Yes,$HOME it is a file!"
 else
-echo “No,$HOME it is not a file!”
-if [ -f $HOME/.bash_history ]
+echo "No,$HOME it is not a file!"
+if [-f$HOME/.bash_history]
 then
 echo “But $HOME/.bash_history is a file!”
 fi
@@ -626,6 +639,7 @@ fi
 ./ifnested.sh 
 ## OUTPUT
 
+<img width="525" height="446" alt="Screenshot from 2026-01-29 19-35-01" src="https://github.com/user-attachments/assets/98b5b838-41ce-4495-b8a6-5c226f57bca0" />
 
 
 # using numeric test comparisons
@@ -669,6 +683,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+<img width="524" height="391" alt="Screenshot from 2026-01-29 19-38-29" src="https://github.com/user-attachments/assets/384b4e64-01ac-4364-aee6-10370de50927" />
 
 # check if a file
 cat > ifnested.sh 
@@ -718,6 +733,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
+<img width="573" height="471" alt="Screenshot from 2026-01-29 19-43-38" src="https://github.com/user-attachments/assets/7765c7cd-da27-4250-a4e2-71025b62e5cb" />
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -746,6 +762,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
+<img width="573" height="471" alt="Screenshot from 2026-01-29 19-49-43" src="https://github.com/user-attachments/assets/6518e143-1051-40c0-970a-1b6de3974e96" />
 
 
 # testing compound comparisons
@@ -762,6 +779,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+<img width="541" height="248" alt="Screenshot from 2026-01-29 19-52-36" src="https://github.com/user-attachments/assets/00a1d05c-7d84-4e0b-bbcc-b24e530f88c4" />
 
 # using the case command
 cat >casecheck.sh 
@@ -799,7 +817,7 @@ $ ./whiletest.sh
  
  
 cat untiltest.sh 
-```bash
+```bashvar
 \#using the until command
 var1=100
 until [ $var1 -eq 0 ]
@@ -873,6 +891,8 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
+<img width="504" height="160" alt="Screenshot from 2026-01-29 20-43-16" src="https://github.com/user-attachments/assets/e21c742f-01cc-4439-9b7b-0164afef46e1" />
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -894,6 +914,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
+<img width="446" height="201" alt="Screenshot from 2026-01-29 20-14-55" src="https://github.com/user-attachments/assets/9589eb54-7543-45d4-b3ce-0befda652ac7" />
 
 
 cat forctype.sh 
@@ -908,6 +929,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
+<img width="397" height="204" alt="Screenshot from 2026-01-29 20-17-49" src="https://github.com/user-attachments/assets/fa1449a6-0fb4-4367-88a3-d48b9ee093fa" />
 
 cat forctype1.sh 
 ```bash
@@ -921,6 +943,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+<img width="412" height="201" alt="Screenshot from 2026-01-29 20-20-11" src="https://github.com/user-attachments/assets/837c9a3c-4c39-4e03-93a2-e05f0dadec44" />
 
 cat fornested1.sh 
 ```bash
@@ -939,6 +962,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
+<img width="753" height="287" alt="Screenshot from 2026-01-29 20-22-54" src="https://github.com/user-attachments/assets/be5ffdec-9bf7-4d05-a5e9-115d75eb85e0" />
 
  
 cat forbreak.sh 
@@ -956,6 +980,7 @@ done
 echo "The for loop is completed“
 ```
 ## OUTPUT
+<img width="753" height="287" alt="Screenshot from 2026-01-29 20-25-30" src="https://github.com/user-attachments/assets/bb94c090-4a85-4ac7-a9b4-ec5fe11d6aaf" />
 
 $ chmod 755 forbreak.sh
  
@@ -981,7 +1006,8 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+ <img width="756" height="275" alt="Screenshot from 2026-01-29 20-29-14" src="https://github.com/user-attachments/assets/0633ad1a-0649-4bff-b3f9-9bb4c7cb2c17" />
+
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -995,6 +1021,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
+<img width="481" height="144" alt="Screenshot from 2026-01-29 20-51-04" src="https://github.com/user-attachments/assets/f204e138-035d-4504-a224-29cebeb50c61" />
 
 
  cat exread1.sh
@@ -1007,6 +1034,7 @@ echo "Hello $name, welcome to my program. “
 $ chmod 755 exread1.sh 
 
 ## OUTPUT
+<img width="774" height="137" alt="Screenshot from 2026-01-29 20-38-08" src="https://github.com/user-attachments/assets/8ba31fda-1f7b-419e-9364-435c673fb5fd" />
 
 
 
@@ -1028,10 +1056,13 @@ echo "Usage: badtest1 a b"
 fi
 ```
 ## OUTPUT
+
  ./funcex.sh 
+<img width="755" height="44" alt="Screenshot from 2026-01-29 20-49-19" src="https://github.com/user-attachments/assets/0e3ad595-f92b-49be-ab27-a7182797f6fb" />
 
  
  ./funcex.sh 1 2
+<img width="762" height="38" alt="Screenshot from 2026-01-29 20-49-58" src="https://github.com/user-attachments/assets/62e28d8d-ee3a-47c2-9ec4-7b92784fc86d" />
 
  
 cat argshift.sh
@@ -1045,6 +1076,8 @@ done
 $ chmod 777 argshift.sh
 
 ## OUTPUT
+<img width="758" height="63" alt="Screenshot from 2026-01-29 20-48-48" src="https://github.com/user-attachments/assets/650b8e86-149e-4d29-8ea3-9526fa19113c" />
+
 $ ./argshift.sh 1 2 3
  
  cat argshift1.sh
@@ -1062,6 +1095,8 @@ done
 ```
 $ chmod 777 argshift.sh
 ## OUTPUT
+<img width="762" height="87" alt="Screenshot from 2026-01-29 20-48-18" src="https://github.com/user-attachments/assets/c73990eb-2931-4aae-baf2-f7b607a20981" />
+
 $ ./argshift.sh 1 2 3
  
 cat argshift.sh
@@ -1075,6 +1110,8 @@ done
 set +x
 ```
 ## OUTPUT
+<img width="765" height="327" alt="Screenshot from 2026-01-29 20-47-44" src="https://github.com/user-attachments/assets/c3747a0f-5eb2-4d5a-a869-c75df57db1e4" />
+
  ./argshift.sh 1 2 3
  
  
@@ -1107,7 +1144,8 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ <img width="783" height="218" alt="Screenshot from 2026-01-29 20-47-10" src="https://github.com/user-attachments/assets/0acdcd62-b7e8-4023-b20c-cf68100840c6" />
+
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1134,7 +1172,8 @@ else
 fi
 ```
 ## OUTPUT 
+<img width="772" height="70" alt="Screenshot from 2026-01-29 20-46-09" src="https://github.com/user-attachments/assets/5d359561-d9b0-47f9-a53c-e356a4520bf1" />
 
 
-# RESULT:
+# RESULT
 The Commands are executed successfully.
