@@ -411,7 +411,7 @@ cat urllist.txt | tr -d ' ' | tr -s '.'
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-
+<img width="539" height="199" alt="Screenshot from 2026-01-30 11-34-19" src="https://github.com/user-attachments/assets/03c1ca6a-c296-4100-906c-905be2679db8" />
 
 mkdir backupdir
  
@@ -421,12 +421,12 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-<img width="284" height="116" alt="Screenshot from 2026-01-29 14-26-04" src="https://github.com/user-attachments/assets/d8e2732a-3d53-4605-b31d-db044b5b2e46" />
+<img width="815" height="505" alt="Screenshot from 2026-01-30 11-35-40" src="https://github.com/user-attachments/assets/161be28d-b476-43d3-8b63-645ca7cddd22" />
 
 
 tar -xvf backup.tar
 ## OUTPUT
-<img width="393" height="140" alt="Screenshot from 2026-01-29 14-26-41" src="https://github.com/user-attachments/assets/6476d5bf-96b4-4fef-975f-a815bc055cd1" />
+<img width="815" height="505" alt="Screenshot from 2026-01-30 11-36-41" src="https://github.com/user-attachments/assets/13bee148-bb86-4cd2-8b9f-700cd41e89bf" />
 
 gzip backup.tar
 
@@ -437,8 +437,7 @@ ls .gz
 gunzip backup.tar.gz
 ls
 ## OUTPUT
-
- <img width="648" height="196" alt="Screenshot from 2026-01-29 18-44-47" src="https://github.com/user-attachments/assets/dcb39916-2663-4a54-9bd5-f752661b6ee0" />
+<img width="815" height="505" alt="Screenshot from 2026-01-30 11-37-53" src="https://github.com/user-attachments/assets/6f4527f1-e2b1-4dc6-bd6a-9883135da71e" />
 
 # Shell Script
 ```
@@ -448,7 +447,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-<img width="651" height="272" alt="Screenshot from 2026-01-29 18-48-07" src="https://github.com/user-attachments/assets/640415b1-adb4-4bf6-a654-610799e5e95e" />
+<img width="582" height="171" alt="Screenshot from 2026-01-30 11-45-20" src="https://github.com/user-attachments/assets/5920917f-a37f-4fb5-a652-0e1339cc8fbc" />
 
  
 cat << stop > herecheck.txt
@@ -461,7 +460,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-<img width="337" height="97" alt="Screenshot from 2026-01-29 18-38-08" src="https://github.com/user-attachments/assets/e439d2c3-ea29-4599-908d-763fcd976793" />
+<img width="458" height="202" alt="Screenshot from 2026-01-30 11-49-02" src="https://github.com/user-attachments/assets/356974be-0838-4f45-9404-e3149a1481d4" />
 
 
 cat < scriptest.sh 
@@ -500,30 +499,29 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-<img width="430" height="331" alt="Screenshot from 2026-01-29 18-54-42" src="https://github.com/user-attachments/assets/57d6cb51-c30d-4626-a8ef-98b0cbf5ac77" />
+<img width="622" height="569" alt="Screenshot from 2026-01-30 11-56-12" src="https://github.com/user-attachments/assets/6c134eff-b04e-45dd-a254-acd57049d14c" />
 
- 
 ls file1
 ## OUTPUT
-<img width="285" height="54" alt="Screenshot from 2026-01-29 18-56-23" src="https://github.com/user-attachments/assets/f64ba6c0-df8e-4ec3-b7b9-0501342188ef" />
+<img width="617" height="60" alt="Screenshot from 2026-01-30 11-56-56" src="https://github.com/user-attachments/assets/c0bcbeb2-6aa7-4963-bd5f-6ab950de557f" />
 
 echo $?
 ## OUTPUT 
+<img width="617" height="60" alt="Screenshot from 2026-01-30 11-57-23" src="https://github.com/user-attachments/assets/efc1a5b2-54b3-4d4a-92ff-072343580b33" />
 
-<img width="285" height="54" alt="Screenshot from 2026-01-29 18-57-06" src="https://github.com/user-attachments/assets/58ae1268-9bd3-45b6-94f7-d25cf49d48e5" />
 
-./one
+./one 
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- <img width="285" height="54" alt="Screenshot from 2026-01-29 18-58-06" src="https://github.com/user-attachments/assets/4ff56ffd-1be8-45e9-8428-2e0afbd0a785" />
+ <img width="527" height="179" alt="Screenshot from 2026-01-30 11-58-30" src="https://github.com/user-attachments/assets/94e63140-c76c-46cb-b906-8cda10345838" />
 
 abcd
  
 echo $?
  ## OUTPUT
-<img width="469" height="221" alt="Screenshot from 2026-01-29 18-59-17" src="https://github.com/user-attachments/assets/12edac98-a0ce-4b68-801e-99d3d11b2f11" />
+<img width="653" height="226" alt="Screenshot from 2026-01-30 12-01-29" src="https://github.com/user-attachments/assets/cc6ee2f9-0382-40af-b398-1fe43845ecb8" />
 
 
  
@@ -592,7 +590,6 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-<img width="631" height="256" alt="Screenshot from 2026-01-29 19-27-20" src="https://github.com/user-attachments/assets/91c15214-1000-4aac-961b-b54394181bf5" />
 
 check if with file location
 cat>ifnested.sh
@@ -639,7 +636,6 @@ fi
 ./ifnested.sh 
 ## OUTPUT
 
-<img width="525" height="446" alt="Screenshot from 2026-01-29 19-35-01" src="https://github.com/user-attachments/assets/98b5b838-41ce-4495-b8a6-5c226f57bca0" />
 
 
 # using numeric test comparisons
@@ -683,7 +679,6 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
-<img width="524" height="391" alt="Screenshot from 2026-01-29 19-38-29" src="https://github.com/user-attachments/assets/384b4e64-01ac-4364-aee6-10370de50927" />
 
 # check if a file
 cat > ifnested.sh 
@@ -733,7 +728,6 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
-<img width="573" height="471" alt="Screenshot from 2026-01-29 19-43-38" src="https://github.com/user-attachments/assets/7765c7cd-da27-4250-a4e2-71025b62e5cb" />
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -762,7 +756,6 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-<img width="573" height="471" alt="Screenshot from 2026-01-29 19-49-43" src="https://github.com/user-attachments/assets/6518e143-1051-40c0-970a-1b6de3974e96" />
 
 
 # testing compound comparisons
@@ -779,8 +772,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-<img width="541" height="248" alt="Screenshot from 2026-01-29 19-52-36" src="https://github.com/user-attachments/assets/00a1d05c-7d84-4e0b-bbcc-b24e530f88c4" />
-
+<
 # using the case command
 cat >casecheck.sh 
 ```bash
