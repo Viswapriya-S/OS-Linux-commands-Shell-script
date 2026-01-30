@@ -554,16 +554,14 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
-<img width="476" height="243" alt="Screenshot from 2026-01-29 19-02-19" src="https://github.com/user-attachments/assets/95c9250c-bec4-492e-937d-cd44ed2955f7" />
-
+<img width="511" height="443" alt="Screenshot from 2026-01-30 12-31-57" src="https://github.com/user-attachments/assets/7b52fff3-340c-4c8d-a80c-32d29f3e1c9a" />
 
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-<img width="605" height="187" alt="Screenshot from 2026-01-29 19-03-22" src="https://github.com/user-attachments/assets/ae3c5fdf-a879-4a1d-8075-4d9b41bddebc" />
-
+<img width="634" height="88" alt="Screenshot from 2026-01-30 12-32-47" src="https://github.com/user-attachments/assets/46f5d0f2-f2bc-49e2-96bd-f4998650981d" />
 
 # check file ownership
 cat < psswdperm.sh 
@@ -590,6 +588,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+<img width="674" height="112" alt="Screenshot from 2026-01-30 12-35-02" src="https://github.com/user-attachments/assets/f0e6672a-28dd-48f5-a44c-5c92d6527a5d" />
 
 check if with file location
 cat>ifnested.sh
@@ -635,6 +634,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
+<img width="713" height="159" alt="Screenshot from 2026-01-30 12-37-15" src="https://github.com/user-attachments/assets/efb299fc-4041-406c-aff0-518e73e382e9" />
 
 
 
@@ -679,6 +679,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+<img width="721" height="112" alt="Screenshot from 2026-01-30 12-39-16" src="https://github.com/user-attachments/assets/41bd7917-5d23-4d9c-b921-eb6853190198" />
 
 # check if a file
 cat > ifnested.sh 
@@ -728,6 +729,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
+<img width="730" height="135" alt="Screenshot from 2026-01-30 12-40-50" src="https://github.com/user-attachments/assets/e8de72f0-f4ba-48b6-91a0-e37e5ee93206" />
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -756,6 +758,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
+<img width="721" height="88" alt="Screenshot from 2026-01-30 12-42-06" src="https://github.com/user-attachments/assets/dc281900-2656-463d-a904-fb1b6a0b9241" />
 
 
 # testing compound comparisons
@@ -772,7 +775,8 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-<
+<img width="721" height="88" alt="Screenshot from 2026-01-30 12-43-18" src="https://github.com/user-attachments/assets/f003cd81-882c-4d07-829b-22c795681101" />
+
 # using the case command
 cat >casecheck.sh 
 ```bash
@@ -791,6 +795,9 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
+##OUTPUT
+<img width="727" height="70" alt="Screenshot from 2026-01-30 12-44-43" src="https://github.com/user-attachments/assets/cd764281-b417-4abc-a0f6-d7dfe5122d07" />
+
  
 cat > whiletest
 ```bash
@@ -806,6 +813,9 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
+##OUTPUT
+<img width="463" height="267" alt="Screenshot from 2026-01-30 12-47-40" src="https://github.com/user-attachments/assets/3d62992e-526a-4ab9-b20e-b7e1b404440c" />
+
  
  
 cat untiltest.sh 
@@ -819,6 +829,8 @@ var1=$[ $var1 - 25 ]
 done
 ``` 
 $ chmod 755 untiltest.sh
+##OUTPUT
+
  
  
  
